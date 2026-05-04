@@ -8,7 +8,7 @@ router.use(arcjetProtection); // Apply Arcjet protection to all auth routes
 
 router.post("/signup", signup);
 
-router.post("/login",arcjetProtection, login);
+router.post("/login", login);
 router.post("/logout", logout);
 router.put("/update-profile", protectRoute, updateProfile);
 
