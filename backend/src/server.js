@@ -1,6 +1,6 @@
 import express from "express";
 import { ENV } from "./lib/env.js";
-
+import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.route.js";
 import messagesRoutes from "./routes/message.route.js";
 import { connect } from "mongoose";
@@ -13,6 +13,7 @@ const app =express();
 const PORT = ENV.PORT || 3000;
 
 app.use(express.json()); // req.body
+app.use(cookieParser()); // req.cookies
 
 app.use("/api/auth",authRoutes);
 app.use("/api/messages",messagesRoutes);
