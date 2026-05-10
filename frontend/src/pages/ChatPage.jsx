@@ -3,10 +3,11 @@ import ActiveTabSwitch from "../components/ActiveTabSwitch";
 import BorderAnimatedContainer from "../components/BorderAnimatedContainer";
 import ProfileHeader from "../components/ProfileHeader";
 import NoConversationPlaceholder from "../components/NoConversationPlaceholder";
-import NoChatsFound from "../components/NoChatsFound";
+// import NoChatsFound from "../components/NoChatsFound";
 import ChatsList from "../components/ChatsList";
 
-
+import ContactList from "../components/ContactList";
+import ChatContainer from "../components/ChatContainer";
 
 
 function ChatPage() {
